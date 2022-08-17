@@ -6,7 +6,6 @@ tags:
   - 栈溢出
   - 汇编
   - riscv
-  - riscv汇编句读
 abbrlink: 97bef05c
 date: 2022-03-07 16:19:20
 ---
