@@ -1,7 +1,7 @@
 ---
 title: linux开启samba服务
 categories:
-  - 安装和配置
+  - 软件安装和配置
 tags:
   - linux
   - samba

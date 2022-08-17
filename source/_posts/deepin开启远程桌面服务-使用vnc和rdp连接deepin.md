@@ -1,7 +1,7 @@
 ---
 title: 'deepin开启远程桌面服务,使用vnc和rdp连接deepin'
 categories:
-  - 安装和配置
+  - 软件安装和配置
 tags:
   - deepin
   - vnc

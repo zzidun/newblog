@@ -1,7 +1,7 @@
 ---
 title: C++的各种宏和属性
 categories:
-  - 经验和总结
+  - 细说CPP标准和stl源码
 tags:
   - C++
   - 细说std源码

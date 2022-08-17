@@ -1,7 +1,7 @@
 ---
 title: c++标准draft翻译
 categories:
-  - 学习和理论
+  - 细说CPP标准和stl源码
 tags:
   - C++
   - C++语言律师

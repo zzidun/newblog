@@ -1,7 +1,7 @@
 ---
 title: linux桌面使用中的那些事
 categories:
-  - 安装和配置
+  - 软件安装和配置
 tags:
   - linux
   - anbox

@@ -1,7 +1,7 @@
 ---
 title: 毛子精简版windows系统下载
 categories:
-  - 安装和配置
+  - 资源分享
 tags:
   - windows
   - 精简系统

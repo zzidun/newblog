@@ -1,7 +1,7 @@
 ---
 title: 安装和配置mariaDB
 categories:
-  - 安装和配置
+  - 软件安装和配置
 tags:
   - mariaDB
 abbrlink: a738e98a

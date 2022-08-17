@@ -1,7 +1,7 @@
 ---
 title: '自行安装nodejs和npm,解决apt源版本不兼容问题'
 categories:
-  - 安装和配置
+  - 软件安装和配置
 tags:
   - vue
   - nodejs

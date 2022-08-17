@@ -1,7 +1,7 @@
 ---
 title: stack_chk_guard避免栈溢出攻击
 categories:
-  - 经验和总结
+  - C语言与riscv汇编阅读
 tags:
   - 栈溢出
   - 汇编

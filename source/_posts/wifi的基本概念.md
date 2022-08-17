@@ -1,7 +1,7 @@
 ---
 title: wifi的基本概念
 categories:
-  - 学习和理论
+  - 经验和总结
 tags:
   - wlan
   - 802.11

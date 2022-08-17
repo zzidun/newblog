@@ -1,7 +1,7 @@
 ---
 title: C++chrono源码分析
 categories:
-  - 学习和理论
+  - 细说CPP标准和stl源码
 tags:
   - C++
   - chrono

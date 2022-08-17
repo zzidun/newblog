@@ -1,7 +1,7 @@
 ---
 title: C++模板元编程初步
 categories:
-  - 学习和理论
+  - 细说CPP标准和stl源码
 tags:
   - C++
   - 模板元编程

@@ -1,7 +1,7 @@
 ---
 title: Nokia N1刷惜旧官改ROM
 categories:
-  - 经验和总结
+  - 资源分享
 tags:
   - nokia n1
   - 惜旧

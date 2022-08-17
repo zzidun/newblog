@@ -1,10 +1,9 @@
 ---
 title: 细说std源码
 categories:
-  - 学习和理论
+  - 细说CPP标准和stl源码
 tags:
   - C++
-  - 细说std源码
 abbrlink: ad8a0b77
 date: 2022-03-07 15:02:01
 ---
