@@ -4,7 +4,7 @@ categories:
   - 细说CPP标准和stl源码
 tags:
   - C++
-  - C++语言律师
+  - 语言律师
   - 工地英语
   - 有生之年
 mathjax: true

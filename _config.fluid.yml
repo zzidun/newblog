@@ -1028,7 +1028,7 @@ links:
       avatar: "https://oeis.org/favicon.ico"
     }
     - {
-      title: "++ draft",
+      title: "C++ draft",
       intro: "C++标准草案",
       link: "http://eel.is/c++draft/",
       avatar: "http://eel.is/c++draft/icon.png"
