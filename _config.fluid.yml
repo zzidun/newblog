@@ -1033,6 +1033,12 @@ links:
       link: "http://eel.is/c++draft/",
       avatar: "http://eel.is/c++draft/icon.png"
     }
+    - {
+      title: "diff blog",
+      intro: "汇聚了散落在网上的各路个人博客",
+      link: "https://www.diff.blog/",
+      avatar: "/img/favicon.png"
+    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
