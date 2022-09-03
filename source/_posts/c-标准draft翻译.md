@@ -16,19 +16,72 @@ date: 2022-03-05 15:37:28
 
 <!-- more -->
 
-## 前言
+# 0. 前言[todo]
 
-有时候,我们会遇到一些语法不能确定的地方.
+有时候，我们会遇到一些语法不能确定的地方。
 
-这时候我回去翻一下标准.
+这时候我回去翻一下标准。
 
-那应该不止我一个人会去标准里找答案,所以我把我阅读过的部分翻译一下.
+所以我把我阅读过的部分翻译一下。
 
-随着我越看越多,这里也会越来越多.
+随着我越看越多，这里也会越来越多。
 
-## 6 基本[basic]
+# 1. 范围[intro.scope]
 
-### 6.6 程序和链接[basic.link]
+1. 这个文档指定了`C++`编程语言的实现要求。本文不仅对`C++`的实现做出了要求，而且也定义了什么是`C++`。这些内容可以在本文的各个位置找到。
+
+2. `C++`是一个基于`ISO/IEC 9899:2018`所描述的C语言的，通用的编程语言。`C++`提供的工具超越了C语言所提供的，包括额外的数据类型、类、模板、异常、命名空间、操作符重载、函数重载、引用、存储释放操作符、和额外的库。
+
+# 2. 参考标准[intro.refs]
+
+1. 本文以某些方式借用了下面的文档中的一些或所有内容。下面列出的文档中：如果标明了日期，那么说明我们只引用了该版本；否则，我们引用的是最新版本。
+
+    1. ISO/IEC 2382, Information technology — Vocabulary
+    2. ISO 8601:2004, Data elements and interchange formats — Information interchange — Representation of dates and times
+    3. ISO/IEC 9899:2018, Programming languages — C
+    4. ISO/IEC/IEEE 9945:2009, Information Technology — Portable Operating System Interface (POSIX)
+    5. ISO/IEC/IEEE 9945:2009/Cor 1:2013, Information Technology — Portable Operating System Interface (POSIX), Technical Corrigendum 1
+    6. ISO/IEC/IEEE 9945:2009/Cor 2:2017, Information Technology — Portable Operating System Interface (POSIX), Technical Corrigendum 2
+    7. ISO/IEC 10646, Information technology — Universal Coded Character Set (UCS)
+    8. ISO/IEC 10646:2003, Information technology — Universal Multiple-Octet Coded Character Set (UCS)
+    9. ISO/IEC/IEEE 60559:2020, Information technology — Microprocessor Systems — Floating-Point arithmetic
+    10. ISO 80000-2:2009, Quantities and units — Part 2: Mathematical signs and symbols to be used in the natural sciences and technology
+    11. Ecma International, ECMAScript3 Language Specification, Standard Ecma-262, third edition, 1999.
+    12. The Unicode Consortium.
+Unicode Standard Annex, UAX #44, Unicode Character Database.
+Edited by Ken Whistler and Laurenţiu Iancu.
+Available from: [http://www.unicode.org/reports/tr44/]
+    13. The Unicode Consortium.
+The Unicode Standard, Derived Core Properties.
+Available from: [https://www.unicode.org/Public/UCD/latest/ucd/DerivedCoreProperties.txt]
+
+2. `ISO/IEC 9899:2018, Clause 7`所描述的库，在下文被称为`C标准库`。
+
+3. `ISO/IEC 9945:2009`所描述的操作系统接口，在下文被称为`POSIX`。
+
+4. `Ecma-262`所描述的ECMAScript编程语言，在下文被称为`ECMA-262`。
+
+5. [记1：从`ISO/IEC 10646:2003`中引用的内容，只用来支撑一些已经过时特性([depr.locale.stdcvt](#0-前言todo))]。
+
+# 3. 条款和定义[intro.defs]
+
+1. 在`ISO/IEC 2382`中给出的条款和定义，在`ISO 80000-2:2009`中给出的条款、定义、和符号，在本文中依旧适用。
+
+2. ISO和IEC在下面的地址中维护了我们所适用的标准文档。
+    1. ISO Online browsing platform: available at [https://www.iso.org/obp]
+    2. IEC Electropedia: [available at http://www.electropedia.or]
+
+3. 那些只在本文的一小段中适用的定义，会用斜体来表示。
+
+## 3.1. 访问[defns.access]
+
+## 3.2. [defns.arbitrary.steam]
+
+## 3.3. [defns.argument]]
+
+# 6. 基本[basic]
+
+## 6.6 程序和链接[basic.link]
 
 1. 一个程序由一个或多个翻译单元链接在一起组成,一个翻译单元由一系列的声明组成.
 
@@ -56,15 +109,15 @@ date: 2022-03-05 15:37:28
 
 3.3. 匿名联合体的数据成员有内部链接.
 
-### 6.9 程序执行[basic.exec]
+## 6.9 程序执行[basic.exec]
 
-#### 6.9.3 开始和终止[basic.start]
+### 6.9.3 开始和终止[basic.start]
 
-##### 6.9.3.3 动态初始化和非阻塞变量[basic.start.dynamic]
+#### 6.9.3.3 动态初始化和非阻塞变量[basic.start.dynamic]
 
 1. 在静态存储区的非阻塞变量的动态初始化顺序是未被指定的,通常顺序会更加偏向于内联变量.
 
-## 7 表达式[expr]
+# 7 表达式[expr]
 
 ## 7.6 复合表达式[expr.compound]
 
@@ -72,15 +125,15 @@ date: 2022-03-05 15:37:28
 
 #### 7.6.1.5 类成员访问[expr.ref]
 
-## 9 声明[dcl]
+# 9 声明[dcl]
 
-### 9.2 标识符[dcl.spec]
+## 9.2 标识符[dcl.spec]
 
-#### 9.2.9 类型标识符[dcl.type]
+### 9.2.9 类型标识符[dcl.type]
 
-##### 9.2.9.6 占位类型标识符[dcl.spec.auto]
+#### 9.2.9.6 占位类型标识符[dcl.spec.auto]
 
-###### 9.2.9.6.1 通常[dcl.spec.auto.general]
+##### 9.2.9.6.1 通常[dcl.spec.auto.general]
 
 ```
 placeholder-type-specifier:
@@ -90,22 +143,21 @@ placeholder-type-specifier:
 
 1. 占位类型标识符表示一个占位类型,这个占位类型在类型推导之后将会被替换成真正的类型.
 
-### 9.3 声明符[dcl.dcl]
+## 9.3 声明符[dcl.dcl]
 
-#### 9.3.4 声明符的含义[dcl.meaning]
+### 9.3.4 声明符的含义[dcl.meaning]
 
-##### 9.3.4.1 通常[dcl.meaning.general]
+#### 9.3.4.1 通常[dcl.meaning.general]
 
-##### 9.3.4.6 函数[dcl.fct]
+#### 9.3.4.6 函数[dcl.fct]
 
 
-## 11 类[class]
+# 11 类
 
-### 11.4 类成员[class.mem]
+## 11.4 类成员
 
-#### 11.4.9 静态成员[class.static]
-
-##### 11.4.9.1 通常[class.static.general]
+### 11.4.9 静态成员
+#### 11.4.9.1 通常
 
 1. 可以使用`X::s`的方式来表示某个类`X`的某个静态成员`s`.不一定需要使用类成员访问[expr.ref]的方式来表示静态成员. 静态成员也可以使用类成员访问的方式来表示,在这种情况下计算对象表达式.
 
@@ -124,13 +176,13 @@ void f() {
 
 > 不能用在出现在命名空间的成员声明中.
 
-##### 11.4.9.2 静态成员函数[class.static.mfct]
+#### 11.4.9.2 静态成员函数[class.static.mfct]
 
 1. [class.mfct]描述的规则同样适用于静态成员函数.
 
 2. 静态成员函数没有`this`指针[expr.prim.this],静态成员函数不能用`const`, `volatile` 或 `virtual`修饰[dcl.fct]
 
-##### 11.4.9.3 静态数据成员[class.static.data]
+#### 11.4.9.3 静态数据成员[class.static.data]
 
 1. 静态数据成员不是类的对象的一部分.`thread_local`的静态数据成员会被每个线程拷贝一份.如果静态数据成员没有声明`thread_local`,那么类的所有成员共享着一个数据成员.
 
@@ -164,16 +216,16 @@ process* process::run_chain = running;
 
 6. 命名空间访问中的类的静态数据成员具有类名称的链接.[basic.link]
 
-## 12 重载[over]
+# 12 重载[over]
 
-### 12.2 重载分析[over.match]
+## 12.2 重载分析[over.match]
 
-#### 12.2.4 最可行的函数[over.match.best]
+### 12.2.4 最可行的函数[over.match.best]
 
-##### 12.2.4.1 通常[over.match.best.general]
+#### 12.2.4.1 通常[over.match.best.general]
 
-##### 12.2.4.2 隐式转换序列[over.best.ics]
+#### 12.2.4.2 隐式转换序列[over.best.ics]
 
-###### 12.2.4.2.1 通常[over.best.ics.general]
+##### 12.2.4.2.1 通常[over.best.ics.general]
 
 1. 隐式转换序列,是一用于将函数调用时传入的参数类型转换为被调用的函数所需要的参数类型的.
