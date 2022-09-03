@@ -26,6 +26,8 @@ date: 2022-03-05 15:37:28
 
 随着我越看越多，这里也会越来越多。
 
+目前，文中所见的大部分页内跳转链接都是跳转到文章开头。
+
 # 1. 范围[intro.scope]
 
 1. 这个文档指定了`C++`编程语言的实现要求。本文不仅对`C++`的实现做出了要求，而且也定义了什么是`C++`。这些内容可以在本文的各个位置找到。
@@ -61,7 +63,7 @@ Available from: [https://www.unicode.org/Public/UCD/latest/ucd/DerivedCoreProper
 
 4. `Ecma-262`所描述的ECMAScript编程语言，在下文被称为`ECMA-262`。
 
-5. [记1：从`ISO/IEC 10646:2003`中引用的内容，只用来支撑一些已经过时特性([depr.locale.stdcvt](#0-前言todo))]。
+5. （记1：从`ISO/IEC 10646:2003`中引用的内容，只用来支撑一些已经过时特性([depr.locale.stdcvt](#0-前言todo))）。
 
 # 3. 条款和定义[intro.defs]
 
@@ -75,9 +77,169 @@ Available from: [https://www.unicode.org/Public/UCD/latest/ucd/DerivedCoreProper
 
 ## 3.1. 访问[defns.access]
 
-## 3.2. [defns.arbitrary.steam]
+（运行时的动作）读取或者修改了对象的值。
 
-## 3.3. [defns.argument]]
+（记1：只有标量类型的广义左值可以用来访问对象。标量对象的读取在[conv.lval](#0-前言todo)中有描述，标量对象的修改在[expr.ass](#0-前言todo)、[expr.post.incr](#0-前言todo)和[expr.pre.incr](#0-前言todo)中有描述。尝试读取或者修改对象，将会导致调用类的构造函数或者赋值操作。尽管这些函数可能会执行一些标量子对象的访问操作，但是这个调用本身并不涉及访问。）
+
+## 3.2. 任意位置流[defns.arbitrary.steam]
+
+（库）只要在流的长度范围内，就可以定位到任意整数位置的流。
+
+（记1：所有任意位置流都是可重定位流[defns.prepolitical.stream](#0-前言todo)）
+
+## 3.3. 参数[defns.argument]
+
+（函数调用表达式）在括号中的，被逗号分隔的表达式。
+
+## 3.4. 参数[defns.argument.macro]
+
+（宏函数表达式）在括号中的，被逗号分隔的预处理器标记序列。
+
+## 3.5. 参数[defns.argument.throw]
+
+（抛出异常）[抛出异常](#0-前言todo)的操作数。
+
+## 3.6. 参数[defns.argument.templ]
+
+（模板实例化）在尖括号中的，被逗号分隔的[常量表达式](#0-前言todo)、[类型标识符](#0-前言todo)或者[表达式](#0-前言todo)。
+
+## 3.7. 阻塞[defns.block]
+
+（执行）需要等待一些条件被满足才能继续执行被阻塞的操作。
+
+## 3.8. 代码块[defns.block.stmt]
+
+（语句）一些复合语句。
+
+## 3.9. 字符[defns.character]
+
+（库）被按顺序对待时，可以表示文本的对象。
+
+（记1：不仅仅是意味着`char`、`char_t`、`char16_t`、`char32_t`、`wchar_t`对象，而且包括任何在[字符串](#0-前言todo)、[本地化](#0-前言todo)、[输入输出](#0-前言todo)或[正则](#0-前言todo)中定义的类型）
+
+## 3.10. 字符容器类型[defns.character.container]
+
+（库）用来表示字符的类或者类型
+
+（记1：字符串，输入输出流，正则表达式类模板）
+
+## 3.11. 对照元素[defns.regex.collating.element]
+
+## 3.12. 组件[defns.component]
+
+## 3.13. 条件支持[defns.cond.supp]
+
+## 3.14. 常数子表达式[defns.const.subexpr]
+
+## 3.15. 死锁[defns.deadlock]
+
+## 3.16. 默认行为[defns.default.behavior.impl]
+
+## 3.17. 诊断信息[defns.diagnostic]
+
+## 3.18. [defns.argument]
+
+## 3.19. [defns.argument.macro]
+
+## 3.20. [defns.argument.throw]
+
+## 3.21. [defns.argument.templ]
+
+## 3.22. [defns.block]
+
+## 3.23. [defns.block.stmt]
+
+## 3.24. [defns.character]
+
+## 3.25. 访问[defns.access]
+
+## 3.26. [defns.arbitrary.steam]
+
+## 3.27. [defns.argument]
+
+## 3.28. 访问[defns.access]
+
+## 3.29. [defns.arbitrary.steam]
+
+## 3.30. [defns.argument]
+
+## 3.31. 访问[defns.access]
+
+## 3.32. [defns.arbitrary.steam]
+
+## 3.33. [defns.argument]
+
+## 3.34. [defns.argument.macro]
+
+## 3.35. [defns.argument.throw]
+
+## 3.36. [defns.argument.templ]
+
+## 3.37. [defns.block]
+
+## 3.38. [defns.block.stmt]
+
+## 3.39. [defns.character]
+
+## 3.40. 访问[defns.access]
+
+## 3.41. [defns.arbitrary.steam]
+
+## 3.42. [defns.argument]
+
+## 3.43. 访问[defns.access]
+
+## 3.44. [defns.arbitrary.steam]
+
+## 3.45. [defns.argument]
+
+## 3.46. 访问[defns.access]
+
+## 3.47. [defns.arbitrary.steam]
+
+## 3.48. [defns.argument]
+
+## 3.49. [defns.argument.throw]
+
+## 3.50. [defns.argument.templ]
+
+## 3.51. [defns.block]
+
+## 3.52. [defns.block.stmt]
+
+## 3.53. [defns.character]
+
+## 3.54. 访问[defns.access]
+
+## 3.55. [defns.arbitrary.steam]
+
+## 3.56. [defns.argument]
+
+## 3.57. 访问[defns.access]
+
+## 3.58. [defns.arbitrary.steam]
+
+## 3.59. [defns.argument]
+
+## 3.60. 访问[defns.access]
+
+## 3.61. [defns.arbitrary.steam]
+
+## 3.62. [defns.argument]
+
+## 3.63. 访问[defns.access]
+
+## 3.64. [defns.arbitrary.steam]
+
+## 3.65. [defns.argument]
+
+## 3.66. 访问[defns.access]
+
+## 3.67. [defns.arbitrary.steam]
+
+## 3.68. 良构[defns.well.formed]
+
+结构遵守了语法规则和语义规则的`C++`程序。
 
 # 6. 基本[basic]
 
