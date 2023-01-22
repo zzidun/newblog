@@ -21,68 +21,87 @@ date: 2022-01-27 15:06:24
 sudo apt install samba
 ```
 
-## 添加一个samba用户
+## 添加samba用户
 
-```shell
-useradd <用户名>
+我反正是懒得创建新用户了, 直接把自己在用的用户设置成了samba用户.
+
+直接输入`smbpasswd`命令, 即将当前用户设置为samba用户,, 并且设置samba密码.
+
+你也可以使用`sudo smbpasswd -a <用户名>`来指定一个用户, 并且为其设置samba密码. (这个用户要已经存在, 你可以先用`useradd`创建一个).
+
+## 最简配置文件
+
+配置文件格式形如
+
+```
+[段落名]
+  内容
+  ...
+
+[段落名]
+  内容
+  ...
+...
 ```
 
-使用`useradd`创建的是一个无密码,无主目录的用户.
+#### 全局设置
 
-如果使用`adduser`,会创建主目录等等.
+`[global]`段是全局设置.
 
-使用`smbpasswd`命令设置这个用户登录`samba`的密码
+你可以直接拷贝以下内容(是的我也看不懂)
 
-```shell
-smbpasswd -a <用户名>
+```
+[global]
+    dns proxy = No
+    map to guest = Bad User
+    netbios name = ARCH LINUX
+    security = USER
+    server role = standalone server
 ```
 
-## 设置共享的文件夹
+#### 文件夹设置
 
-给文件夹设置`777`权限.
+每个`[共享项目名称]`描述了一个共享文件夹的设置.
 
-```shell
-chmod 777 <路径>
+也就是你每需要设置一个共享文件夹, 就在这里加一段描述.
+
+例如
+```
+# 别人访问samba将会看到这个文件夹名<home>
+[home]
+    # 文件夹的路径
+    path = /home/zzidun/
+    # 是否只读
+    read only = No
+    # 具有写入权限的用户()
+    write list = @zzidun
 ```
 
-## 修改配置文件
 
-修改`/etc/samba/smb.conf`文件,每当想要共享一个文件夹,就在后面添加内容如下:
+#### 我的完整配置文件
 
 ```shell
-[<共享文件夹在客户端中显示的名称>]
-comment = <注释>
-browseable = yes
-path = <共享文件夹路径>
-create mask = 0777
-directory mask = 0777
-valid users = <登录这个文件夹用的用户名>
-public = no
-available = yes
-writeable = yes
+[global]
+    dns proxy = No
+    map to guest = Bad User
+    netbios name = ARCH LINUX
+    security = USER
+    server role = standalone server
+
+[home]
+    path = /home/zzidun/
+    read only = No
+    write list = @zzidun
 ```
 
-例如,我们想要直接共享用户`zzidun`的主目录,`samba`登录的用户为`smb`.
+## 启动服务
 
-那么就编写配置文件如下:
-
-```shell
-[desktop-home]
-comment = zzidun-share
-browseable = yes
-path = /home/zzidun
-create mask = 0777
-directory mask = 0777
-valid users = smb
-public = no
-available = yes
-writeable = yes
-```
-
-## 重启服务
+对于`archlinux`, 使用以下命令:
 
 ```shell
-service smbd restart
+sudo systemctl enable samba
+sudo systemctl enable smb.service
+
 ```
 
 之后就可以在局域网内的各个设备通过`ip`访问这个文件夹.
