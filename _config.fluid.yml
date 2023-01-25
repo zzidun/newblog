@@ -1033,10 +1033,10 @@ links:
       avatar: "http://eel.is/c++draft/icon.png"
     }
     - {
-      title: "diff blog",
-      intro: "汇聚了散落在网上的各路个人博客",
-      link: "https://www.diff.blog/",
-      avatar: "/img/favicon.png"
+      title: "Sunic",
+      intro: "Sunic Yosen的博客",
+      link: "https://sunicyosen.github.io/",
+      avatar: "https://sunicyosen.github.io/assets/res/user.png"
     }
 
   # 当成员头像加载失败时，替换为指定图片
