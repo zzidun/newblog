@@ -42,7 +42,7 @@ date: 2023-01-22 12:39:33
 
 2. [软件幻灭](#软件幻灭)
 
-3. [为什么Ubuntu的Snap是不受欢迎的](#为什么Ubuntu的Snap是不受欢迎的)
+3. [为什么ubuntu的snap不受欢迎](#为什么ubuntu的snap不受欢迎)
 
 # 完全使用linux工作
 
@@ -697,7 +697,7 @@ Jonathan Blow 自己开发给自己游戏开发用的编程语言，在笔记本
 我希望我不孤单。我希望有更多的人也想这么做。如果我们现在能够开始讨论软件行业的现状有多糟糕，我也会感到欣慰。或许我们能找到出路。
 
 
-# 为什么Ubuntu的Snap是不受欢迎的
+# 为什么ubuntu的snap不受欢迎
 
 最近在Github上发现了一个非常有意思的开源项目，名称是`unsnap`
 
@@ -745,7 +745,7 @@ Ubuntu与Snap
 
 ## Snap与APT
 
-在说Snap为什么不受欢迎之前，说回Snap和APT的这两者的关系与冲突吧。
+在说Snap为什么ubuntu的snap不受欢迎之前，说回Snap和APT的这两者的关系与冲突吧。
 
 如我以前在相关的文章中也阐述过了，Ubuntu其实是基于Debian基础之上构建的操作系统，而Debian使用的是APT包管理。
 
