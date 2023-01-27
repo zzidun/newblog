@@ -948,7 +948,7 @@ about:
   banner_mask_alpha: 0.3
   avatar: /img/logo.png
   name: "zzidun"
-  intro: "愿你真正成为你自己的同伴, 愿你找到许多和你站在一起的同伴."
+  intro: "我极端|偏激|急躁|固执, 看似最低俗的恶人; 但我怀揣着善, 我走向光明. 我是爱的战士 我是正义之怒."
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
