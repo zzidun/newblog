@@ -956,7 +956,6 @@ about:
     - { class: "iconfont icon-rss", link: "https://zzidun.eu.org/atom.xml", tip: "RSS订阅" }
     - { class: "iconfont icon-mail", link: "mailto:zzidun@posteo.com", tip: "邮箱联系" }
 
-
 #---------------------------
 # 自定义页
 # Custom Page
